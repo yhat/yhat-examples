@@ -1,3 +1,16 @@
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+.DS_store
+.R*
+.DS_Store
+.Rproj.user
+*.Rproj
+*.Rbuildignore
+*.DS_Store
+
 *.py[cod]
 
 # C extensions
