@@ -123,14 +123,14 @@ for overall, team in enumerate(draft_order):
 # DEPLOY
 from yhat import Yhat, BaseModel
 
-yh = Yhat("drew", "YOUR API KEY")
+yh = Yhat("drew", "your-api-key")
 
 class FantasyFootball(BaseModel):
     def transform(self, rawdata):
         return rawdata
     
     def predict(self, data):
-        return {"draft_sequence": draft_sequence}
+        return {"draft_sequence": self.draft_sequence}
 
 ff = FantasyFootball(draft_sequence=draft_sequence)
 print yh.deploy("fantasyFootballDraft", ff)
