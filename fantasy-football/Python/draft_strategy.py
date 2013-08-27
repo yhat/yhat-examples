@@ -130,9 +130,7 @@ class FantasyFootball(BaseModel):
         return rawdata
     
     def predict(self, data):
-        return pd.DataFrame({
-            "draft_sequence": draft_sequence
-            })
+        return {"draft_sequence": draft_sequence}
 
 ff = FantasyFootball(draft_sequence=draft_sequence)
 print yh.deploy("fantasyFootballDraft", ff)
