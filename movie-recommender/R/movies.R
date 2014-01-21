@@ -66,8 +66,8 @@ model.predict <- function(df) {
 }
 
 yhat.config <- c(
-  username="greg",
-  apikey="your-api-key"
+  username={USERNAME},
+  apikey={APIKEY}
 )
 
 yhat.deploy("movieRecommender")
@@ -77,7 +77,7 @@ sample.data <- data.frame(title=sort(unique(movies$title)))
 # try twice
 yhat.document("movieRecommender", 1, sample.data)
 # open the URL to view the model:
-#   http://yhathq.com/models/greg/521d2566b517e80e324075a5
+#   http://yhathq.com/models/{USERNAME}/521d2566b517e80e324075a5
 
 
 
