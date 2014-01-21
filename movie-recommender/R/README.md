@@ -2,4 +2,4 @@
 
 - open movies.R
 - source the file
-- run `recMovies(__new title__)`
+- run `recMovies(new title)`
