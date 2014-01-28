@@ -42,5 +42,4 @@ class TwitterRanker(YhatModel):
 
 
 yh = Yhat("USERNAME", "APIKEY", "ENTERPRISE_URI")
-yh.deploy("twitterRanker", TwitterRanker)
-# {"status": "success"}
+yh.deploy("twitterRanker", TwitterRanker, globals())
