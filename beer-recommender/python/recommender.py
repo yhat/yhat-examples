@@ -116,7 +116,6 @@ class BeerRecommender(YhatModel):
 
 yh = Yhat("YOUR_USERNAME", "YOUR_APIKEY", "http://cloud.yhathq.com/")
 
-
 if raw_input("Deploy? (y/N)") == "y":
     print yh.deploy("BeerRecommender", BeerRecommender, globals())
 
