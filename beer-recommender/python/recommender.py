@@ -114,8 +114,7 @@ class BeerRecommender(YhatModel):
         # return dists
         return {"result": normalize_dists(dists)}
 
-# yh = Yhat("YOUR_USERNAME", "YOUR_APIKEY", "http://cloud.yhathq.com/")
-yh = Yhat("j@yhathq.com", "073ce61a525ba770cbf8d831cd837f39", "http://cloud.yhathq.com/")
+yh = Yhat("YOUR_USERNAME", "YOUR_APIKEY", "http://cloud.yhathq.com/")
 
 if raw_input("Deploy? (y/N)") == "y":
     print yh.deploy("BeerRecommender", BeerRecommender, globals())
