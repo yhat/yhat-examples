@@ -39,10 +39,11 @@ str(step1)
 model.predict(step1)
 
 yhat.config <- c(
-  username={USERNAME}
-  apikey={APIKEY}
+  username='YOUR_USERNAME',
+  apikey='YOUR_APIKEY',
+  env="http://cloud.yhathq.com/"
 )
 
 yhat.deploy("germanCredit")
-yhat.predict("germanCredit", 1, testcase)
+yhat.predict("germanCredit", testcase)
 
