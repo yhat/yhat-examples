@@ -67,7 +67,8 @@ model.predict <- function(df) {
 
 yhat.config <- c(
   username={USERNAME},
-  apikey={APIKEY}
+  apikey={APIKEY},
+  env="http://cloud.yhathq.com/"
 )
 
 yhat.deploy("movieRecommender")
@@ -75,9 +76,9 @@ yhat.deploy("movieRecommender")
 #   unique, sorted list of movies w/ reviews>300
 sample.data <- data.frame(title=sort(unique(movies$title)))
 # try twice
-yhat.document("movieRecommender", 1, sample.data)
+yhat.document("movieRecommender", sample.data)
 # open the URL to view the model:
-#   http://yhathq.com/models/{USERNAME}/521d2566b517e80e324075a5
+#   http://cloud.yhathq.com/models/{USERNAME}/movieRecommender
 
 
 
