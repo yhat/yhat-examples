@@ -78,7 +78,7 @@ sample.data <- data.frame(title=sort(unique(movies$title)))
 # try twice
 yhat.document("movieRecommender", sample.data)
 # open the URL to view the model:
-#   http://cloud.yhathq.com/models/{USERNAME}/movieRecommender
+#   http://cloud.yhathq.com/{USERNAME}/models//movieRecommender
 
 
 
