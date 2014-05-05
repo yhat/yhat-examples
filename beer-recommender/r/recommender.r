@@ -46,13 +46,13 @@ model.predict(testcase)
 
 
 library(yhatr)
-yhat.config <- c(username="greg", apikey="fCVZiLJhS95cnxOrsp5e2VSkk0GfypZqeRCntTD1nHA", env="http://sandbox.yhathq.com/")
+yhat.config <- c(username="{ USERNAME }", apikey="{ APIKEY }", env="http://sandbox.yhathq.com/")
 yhat.deploy("BeerRecR")
 
 # curl -X POST -H "Content-type: application/json" \
-#   --user greg:fCVZiLJhS95cnxOrsp5e2VSkk0GfypZqeRCntTD1nHA \
+#   --user { USERNAME }:{ APIKEY } \
 #   --data '{"beers": ["Coors Light"]}' \
-#   http://sandbox.yhathq.com/greg/models/BeerRecR/
+#   http://sandbox.yhathq.com/{ USERNAME }/models/BeerRecR/
 # {
 #   "yhat_id": "6f232a20-5830-4410-9ab3-362694d52f38",
 #   "result": {
