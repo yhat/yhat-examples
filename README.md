@@ -12,8 +12,8 @@ A RandomForest built using R and the German credit dataset.
 ### [Movie Recommender](https://github.com/yhat/yhat-examples/tree/master/movie-recommender/R)
 A movie recommender built with R using the MovieLens dataset.
 
-### [Fantasy Football Drafter](https://github.com/yhat/yhat-examples/tree/master/fantasy-football)
-A quantitative approach to filling out your fantasy football roster. Example in R and Python.
+### [Twitter Feed](https://github.com/yhat/yhat-examples/tree/master/twitter-feed)
+Predict how many retweets and favorites a tweet will get based on the url that's being shared.
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-46996803-1/yhat-examples/README.md)](https://github.com/yhat/yhat-examples)
