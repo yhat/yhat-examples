@@ -1,5 +1,5 @@
-# Python Beer Recommender
+# R Beer Recommender
 
 - replace {USERNAME} and {APIKEY} with your credentials
-- run `python recommender.py`
-- enter `y` to deploy
+- start `R`
+- run recommender.R
