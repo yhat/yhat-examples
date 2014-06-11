@@ -29,7 +29,7 @@ getSimilarBeers <- function(beers_i_like) {
   }
   results <- best.beers[order(best.beers[,-1]),]
   names(results) <- c("beer_name", "similarity")
-  results[! results$beer_name %in% beer,]
+  results[! results$beer_name %in% best.beers,]
 }
 getSimilarBeers(c("Coors Light"))
 
