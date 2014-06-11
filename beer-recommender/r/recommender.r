@@ -29,7 +29,7 @@ getSimilarBeers <- function(beers_i_like) {
   }
   results <- best.beers[order(best.beers[,-1]),]
   names(results) <- c("beer_name", "similarity")
-  results[! results$beer_name %in% best.beers,]
+  results[! results$beer_name %in% beers_i_like,]
 }
 getSimilarBeers(c("Coors Light"))
 
@@ -46,7 +46,7 @@ model.predict(testcase)
 
 
 library(yhatr)
-yhat.config <- c(username="{ USERNAME }", apikey="{ APIKEY }", env="http://sandbox.yhathq.com/")
+yhat.config <- c(username="{ USERNAME }", apikey="{ APIKEY }", env="http://cloud.yhathq.com/")
 yhat.deploy("BeerRecR")
 
 # curl -X POST -H "Content-type: application/json" \
